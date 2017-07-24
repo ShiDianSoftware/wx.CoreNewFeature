@@ -1,8 +1,9 @@
 /* CoreNewFeature.wxss */
-.CoreNF{background: red;position: fixed; left: 0;top: 0; bottom: 0;right: 0; display: flex;}
+.CoreNF{position: fixed; left: 0;top: 0; bottom: 0;right: 0; display: flex; background: white;}
 .CoreNF swiper,.CoreNF swiper-item,.CoreNF image {widows: 100%; height: 100%; display: flex;flex: 1;}
-.CoreNF image{border: 1px solid blue;justify-content:center;align-items:center;}
-
+.CoreNF image{justify-content:center;align-items:center;}
+.CoreNF_show{z-index: 1000; display: block;}
+.CoreNF_hide {z-index: 0; display: none;}
 
 
 

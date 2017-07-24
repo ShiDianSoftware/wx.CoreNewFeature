@@ -1,11 +1,12 @@
 <!--CoreNewFeature.wxml-->
-<view class="CoreNF">
-  <swiper autoplay="false" duration="250">
-  <block wx:for="{{5}}">
-    <swiper-item>
-      <image mode="scaleToFit" src="http://im6.leaderhero.com/wallpaper/213/9387294b039c442f9f23470caf8dc238.jpg"/>
-    </swiper-item>
-  </block>
-</swiper>
-
-</view>
+<block wx:if="{{CoreNF_Ready}}">
+  <view class="CoreNF {{CoreNF_hide ? 'CoreNF_hide' : 'CoreNF_show'}}" animation="{{CoreNF_anim}}">
+    <swiper duration="350" bindchange="CoreNF_changeAction" bindtap="CoreNF_tapAction">
+      <block wx:for="{{CoreNF_imgs}}">
+        <swiper-item>
+          <image mode="scaleToFit" src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</block>
