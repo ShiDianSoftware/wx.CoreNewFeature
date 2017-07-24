@@ -1,0 +1,11 @@
+<!--CoreNewFeature.wxml-->
+<view class="CoreNF">
+  <swiper autoplay="false" duration="250">
+  <block wx:for="{{5}}">
+    <swiper-item>
+      <image mode="scaleToFit" src="http://im6.leaderhero.com/wallpaper/213/9387294b039c442f9f23470caf8dc238.jpg"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+</view>

@@ -1,0 +1,3 @@
+<!--pages/Index/Index.wxml-->
+<include src="/pages/FrameWorks/CoreNewFeature/CoreNewFeature.wxml" />
+<text>Index.wxml</text>
